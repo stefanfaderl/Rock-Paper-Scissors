@@ -23,21 +23,23 @@ function computerChoice() {
 }
 
 function game(gamerChoice) {
-  if (gamerChoice == "siccors") {
-    siccorsFunction();
-  } else if (gamerChoice == "stone") {
-    stoneFunction();
-  } else {
-    paperFunction();
-  }
-  round++;
-  if (round > 3) {
-    if (countPlayer == countComputer) {
-      enemyOption.innerHTML = "Draw! Let's try it again";
-    } else if (countPlayer > countComputer) {
-      enemyOption.innerHTML = "Congratulation you win!!!";
+  if (round < 4) {
+    if (gamerChoice == "siccors") {
+      siccorsFunction();
+    } else if (gamerChoice == "stone") {
+      stoneFunction();
     } else {
-      enemyOption.innerHTML = "Too bad you lost the game!";
+      paperFunction();
+    }
+    round++;
+    if (round > 3) {
+      if (countPlayer == countComputer) {
+        enemyOption.innerHTML = "Draw! Let's try it again";
+      } else if (countPlayer > countComputer) {
+        enemyOption.innerHTML = "Congratulation you win!!!";
+      } else {
+        enemyOption.innerHTML = "Too bad you lost the game!";
+      }
     }
   }
 }

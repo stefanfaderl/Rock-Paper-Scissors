@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c2b40c48ad.js" crossorigin="anonymous"></script>
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -22,17 +23,24 @@
                 <h3 id="enemy-option"></h3>
             </section>
         </section>
-        </section>
         <article>
             <section class="flex">
-                <button type="button" class="schere" onclick="game('siccors')"></button>
-                <button type="button" class="stone" onclick="game('stone')"></button>
-                <button type="button" class="paper" onclick="game('paper')">​</button>
+                <div class="stone" onclick="game('stone')">
+                    <i class="fa-solid fa-hand-back-fist fa-7x fa-bounce"></i>
+                </div>
+                <div class="paper" onclick="game('paper')">
+                    <i class="fa-solid fa-hand fa-7x"></i>
+                </div>
+                <div class="schere" onclick="game('siccors')">
+                    <i class="fa-solid fa-hand-scissors fa-7x"></i>
+                </div>
             </section>
         </article>
-        <button type="button" id="restart-game">RESTART GAME</button>
-        <script src="script.js"></script>
+        <div class="container">
+            <button type="button" id="restart-game">RESTART GAME</button>
+        </div>
     </main>
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -4,16 +4,17 @@
     padding: 0;
 }
 
-body {
-    height: 100vh;
-    background: radial-gradient(circle at 11% 62%, rgba(205, 205, 205, 0.04) 0%, rgba(205, 205, 205, 0.04) 50%, rgba(149, 149, 149, 0.04) 50%, rgba(149, 149, 149, 0.04) 120%), radial-gradient(circle at 78% 10%, rgba(49, 49, 49, 0.04) 0%, rgba(49, 49, 49, 0.04) 50%, rgba(254, 254, 254, 0.04) 50%, rgba(254, 254, 254, 0.04) 120%), radial-gradient(circle at 92% 43%, rgba(34, 34, 34, 0.04) 0%, rgba(34, 34, 34, 0.04) 50%, rgba(206, 206, 206, 0.04) 50%, rgba(206, 206, 206, 0.04) 120%), linear-gradient(329deg, rgb(241, 77, 33), rgb(218, 227, 61));
+body, html {
+    height: 100%;
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: radial-gradient(circle at 11% 62%, rgba(205, 205, 205, 0.04) 0%, rgba(205, 205, 205, 0.04) 50%, rgba(149, 149, 149, 0.04) 50%, rgba(149, 149, 149, 0.04) 120%), radial-gradient(circle at 78% 10%, rgba(49, 49, 49, 0.04) 0%, rgba(49, 49, 49, 0.04) 50%, rgba(254, 254, 254, 0.04) 50%, rgba(254, 254, 254, 0.04) 120%), radial-gradient(circle at 92% 43%, rgba(34, 34, 34, 0.04) 0%, rgba(34, 34, 34, 0.04) 50%, rgba(206, 206, 206, 0.04) 50%, rgba(206, 206, 206, 0.04) 120%), linear-gradient(329deg, rgb(241, 77, 33), rgb(218, 227, 61));
+    overflow: auto;
 }
 
 h1 {
     text-align: center;
-    margin: 20px 0px;
+    padding: 10px 0px;
 }
 
 h3 {
@@ -57,13 +58,12 @@ h3 {
     margin: 10px 0;
 }
 
-.flex>button {
+.flex>div {
     display: flex;
-    height: 150px;
-    width: 150px;
     background-size: cover;
     background-color: transparent;
     border: none;
+    margin: 10px;
 }
 
 button:hover {
@@ -73,8 +73,7 @@ button:hover {
 
 #restart-game {
     font-size: 1.2rem;
-    margin: 20px auto;
-    display: block;
+    margin: 0 auto;
     padding: 14px;
     background: whitesmoke;
     font-weight: bold;
@@ -86,23 +85,22 @@ button:hover {
     background: rgba(255, 255, 0, 0.644);
 }
 
-.schere {
-    background-image: url(img/siccorsAusgeschnitten.png);
-    background-position: center;
-    transform: rotate(-10deg);
-}
-
 .stone {
-    background-image: url(img/stoneAusgeschnitten.png);
-    height: 120px;
-    width: 120px;
-    background-position: center;
+    --fa-bounce-height: -30px;
+    --fa-animation-duration: 4s;
+    --fa-bounce-start-scale-x: 1;
+    --fa-bounce-start-scale-y: 1;
+    --fa-bounce-jump-scale-x: 1;
+    --fa-bounce-jump-scale-y: 1;
+    --fa-bounce-land-scale-x: 1;
+    --fa-bounce-land-scale-y: 1;
+    --fa-bounce-rebound: 0;
 }
 
-.paper {
-    background-image: url(img/paperAusgeschnitten.png);
+.schere:hover, .paper:focus {
+    transform: rotate(10deg);
 }
 
-.paper:hover {
+.paper:hover, .paper:focus {
     transform: rotate(10deg);
 }
