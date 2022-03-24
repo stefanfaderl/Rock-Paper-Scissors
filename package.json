@@ -1,0 +1,28 @@
+{
+  "name": "JS-1-Kompetenz-Schere-Stein-Papier",
+  "version": "1.0.0",
+  "description": "Everybody knows this game. No long description needed. Three rounds. The winner takes it all.",
+  "main": "script.js",
+  "dependencies": {
+    "jest": "^27.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stefanfaderl/Rock-Paper-Scissors.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stefanfaderl/Rock-Paper-Scissors/issues"
+  },
+  "homepage": "https://github.com/stefanfaderl/Rock-Paper-Scissors#readme"
+  ,
+  "jest":{
+    "testEnvironment": "jsdom"
+  }
+}

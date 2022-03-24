@@ -1,3 +1,6 @@
+addNumbers = (a, b) => a + b;
+module.exports = addNumbers;
+
 const restartGame = document.getElementById("restart-game");
 let yourPoints = document.getElementById("your-points");
 let computerPoints = document.getElementById("computer-points");
@@ -6,9 +9,11 @@ let countPlayer = 0;
 let countComputer = 0;
 let round = 1;
 
-restartGame.addEventListener("click", function () {
-  location.reload();
-});
+window.onload = () => {
+  restartGame.addEventListener("click", function () {
+    location.reload();
+  });
+};
 
 /* assign values computer */
 function computerChoice() {
