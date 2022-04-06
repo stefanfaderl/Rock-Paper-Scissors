@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "Everybody knows this game. No long description needed. Three rounds. The winner takes it all.",
   "main": "script.js",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "jest": "^27.5.1"
   },
-  "devDependencies": {},
+  "type": "module",
   "scripts": {
     "test": "jest"
   },
@@ -20,9 +21,8 @@
   "bugs": {
     "url": "https://github.com/stefanfaderl/Rock-Paper-Scissors/issues"
   },
-  "homepage": "https://github.com/stefanfaderl/Rock-Paper-Scissors#readme"
-  ,
-  "jest":{
+  "homepage": "https://github.com/stefanfaderl/Rock-Paper-Scissors#readme",
+  "jest": {
     "testEnvironment": "jsdom"
   }
 }

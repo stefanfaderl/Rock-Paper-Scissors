@@ -1,6 +1,3 @@
-addNumbers = (a, b) => a + b;
-module.exports = addNumbers;
-
 const restartGame = document.getElementById("restart-game");
 let yourPoints = document.getElementById("your-points");
 let computerPoints = document.getElementById("computer-points");
